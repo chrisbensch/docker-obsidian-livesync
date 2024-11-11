@@ -8,7 +8,7 @@ services:
         #- PGID=100
         #- UMASK=0022
         - TZ=America/Los_Angeles
-        - COUCHDB_USER=obsidian_user # optionally change me, must update init script
+        - COUCHDB_USER=admin # optionally change me, must update init script
         - COUCHDB_PASSWORD=password # definitly change me, must update init script
       ports:
         - "5984:5984"
