@@ -4,10 +4,10 @@ services:
       container_name: obsidian-livesync #shortened name
       image: couchdb:3.3.3
       environment:
-        - PUID=99
-        - PGID=100
-        - UMASK=0022
-        - TZ=America/New_York
+        #- PUID=99
+        #- PGID=100
+        #- UMASK=0022
+        - TZ=America/Los_Angeles
         - COUCHDB_USER=obsidian_user # optionally change me, must update init script
         - COUCHDB_PASSWORD=password # definitly change me, must update init script
       ports:
